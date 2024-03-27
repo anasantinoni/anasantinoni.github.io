@@ -1,0 +1,214 @@
+/*o * é para todos elementos*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* variavies */
+
+:root {
+  --main-color: #db64f3;
+  --main-text-color: #e0d2e2;
+  --border-color: #d3cfe781;
+  --bio-bg-color: #12021bd9;
+  --bio-border-color: #d3cfe781;
+  --about-bg-color: #12021b;
+}
+
+/* General */
+.highlight {
+  color: var(--main-color);
+}
+
+/* Container*/
+#container {
+  display: flex;
+  flex-direction: row; /*linha com duas colunas*/
+  color: var(--main-text-color);
+}
+
+/*container um do lado do outro, as colunas*/
+#bio-container {
+  flex: 1 1 20%; /*tamanho da coluna*/
+  min-height: 100vh; /*altura, tela inteira*/
+  background-color: var(--bio-bg-color);
+  text-align: center;
+  padding: 30px 12px;
+  border-right: 1px solid var(--bio-border-color);
+}
+
+#about-container {
+  flex: 1 1 80%;
+  height: 100vh; /*o vh deixa a tela toda*/
+  background-color: var(--about-bg-color);
+  padding: 50px;
+}
+
+#bio-container img {
+  width: 150px;
+  height: 150px;
+}
+
+/*bio container*/
+#bio-container h2 {
+  margin-bottom: 25px; /*afasta o nome da foto*/
+}
+
+#bio-container #welcome-text {
+  font-weight: bold;
+  /*seja bem vindo em negrito*/
+}
+
+#bio-container p {
+  margin-bottom: 20px; /*espaço antes bem vindo*/
+}
+
+#bio-container img {
+  width: 150px;
+  height: 150px;
+}
+
+#bio-image {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%; /*deixar img redonda*/
+}
+
+#social-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+#social-container {
+  flex: 1 1 0;
+  max-width: 100vh;
+}
+
+#social-container li a {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+#email-container {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+#email-container ion-icon,
+#email-container a {
+  position: sticky;
+}
+
+#email-container a {
+  color: var(--main-text-color);
+  text-decoration: none; /*pra tirar a linha embaixo do link*/
+}
+
+#email-container ion-icon {
+  color: var(--main-color);
+  font-size: 20px;
+  margin-right: 5px;
+  max-width: 20px;
+}
+
+/* about comtainer*/
+#name {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+#title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#description {
+  max-width: 75%;
+  margin-bottom: 10px;
+}
+
+#skills-section-title {
+  margin-top: 10px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+#skills-container {
+  display: flex; /*cada uma tem sua caixinha*/
+  flex-wrap: wrap; /*quebra a largura*/
+  margin-top: 25px;
+}
+
+.skills-box {
+  flex: 1 1 33%;
+  max-width: 33%;
+  margin-bottom: 35px;
+}
+
+.skills-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  border-left: 5px solid var(--main-color);
+}
+
+.skills-box i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+/*mobile*/
+@media (max-width: 450px) {
+  /*tamanho dos celulares*/
+  #container {
+    flex-direction: column;
+  }
+
+  #bio-container {
+    min-height: auto;
+    border-right: none;
+    border-bottom: 5px solid var(--bio-border-color);
+  }
+
+  #bio-container h2 {
+    display: none;
+  }
+
+  #bio-container p {
+    max-width: 60%;
+    margin: 10px auto;
+  }
+
+  #about-container {
+    text-align: center;
+    padding: 30px;
+  }
+
+  #about-container .description {
+    margin: 10px auto;
+    max-width: 100%;
+    line-height: 26px;
+  }
+
+  .skills-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .skills-box i {
+    font-size: 60px;
+  }
+}

@@ -32,7 +32,7 @@
 /*container um do lado do outro, as colunas*/
 #bio-container {
   flex: 1 1 20%; /*tamanho da coluna*/
-  min-height: 100vh; /*altura, tela inteira*/
+  min-height: 130vh; /*altura, tela inteira*/
   background-color: var(--bio-bg-color);
   text-align: center;
   padding: 30px 12px;
@@ -41,7 +41,7 @@
 
 #about-container {
   flex: 1 1 80%;
-  height: 100vh; /*o vh deixa a tela toda*/
+  height: 130vh; /*o vh deixa a tela toda*/
   background-color: var(--about-bg-color);
   padding: 50px;
 }

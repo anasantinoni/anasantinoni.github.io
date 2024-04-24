@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: row; /*linha com duas colunas*/
   color: var(--main-text-color);
+  min-height: 100vh;
 }
 
 /*container um do lado do outro, as colunas*/
@@ -40,6 +41,7 @@
 
 #about-container {
   flex: 1 1 80%;
+  height: 130vh; /*o vh deixa a tela toda*/
   background-color: var(--about-bg-color);
   padding: 50px;
 }

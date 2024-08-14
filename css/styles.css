@@ -56,13 +56,8 @@
   margin-bottom: 25px; /*afasta o nome da foto*/
 }
 
-#bio-container #welcome-text {
-  font-weight: bold;
-  /*seja bem vindo em negrito*/
-}
-
 #bio-container p {
-  margin-bottom: 20px; /*espaço antes bem vindo*/
+  margin-bottom: 25px; /*espaço antes bem vindo*/
 }
 
 #bio-container img {

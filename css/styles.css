@@ -41,7 +41,7 @@
 
 #about-container {
   flex: 1 1 80%;
-  height: 130vh; /*o vh deixa a tela toda*/
+  min-height: 100vh; /* Mudado para corrigir o fundo branco no final da página */
   background-color: var(--about-bg-color);
   padding: 50px;
 }
@@ -117,6 +117,7 @@
 #name {
   font-size: 42px;
   margin-bottom: 15px;
+  color: var(--main-color);
 }
 
 #title {
